@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDemoB4.pages.HomePage"
+                Title="I am Parent Of Tab1 , 2  and 3">
+
+    <MasterDetailPage.Master>
+        <ContentPage   Title="Master Master Page">
+            <StackLayout Orientation="Vertical">
+                <Button Text="menu1" Clicked="Menu1Navigation"></Button>
+                <Button Text="menu2"></Button>
+                <Button Text="menu3"></Button>
+            </StackLayout>
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <TabbedPage Title="I am Parent Of Tab1 , 2  and 3">
+            <ContentPage Title="Tab1">
+                <StackLayout>
+                    <Label Text="I am From Tab1"></Label>
+                </StackLayout>
+            </ContentPage>
+            <ContentPage Title="Tab2">
+                <StackLayout>
+                    <Label Text="I am From Tab2"></Label>
+                </StackLayout>
+            </ContentPage>
+            <ContentPage Title="Tab3">
+                <StackLayout>
+                    <Label Text="I am From Tab3"></Label>
+                </StackLayout>
+            </ContentPage>
+        </TabbedPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

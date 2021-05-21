@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDemoB4.pages.WelcomePage"
+             Title="welcomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to App Demo B4"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Next" Clicked="GoToNextPage"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
